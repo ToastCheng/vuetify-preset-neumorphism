@@ -1,0 +1,102 @@
+
+// @import './variables.scss'
+@use 'sass:color'
+@import '~vuetify/src/styles/styles.sass'
+
+#app
+  background: var(--v-primary-base)
+
+// button
+.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined)
+  background: inherit
+
+
+.v-btn.v-btn--contained
+  border-radius: 40px 
+  background: inherit
+  box-shadow:  3px 3px 6px rgba(0, 0, 0, 0.25), -3px -3px 6px rgba(255, 255, 255, 0.3) 
+  margin: 4px 
+  
+
+.v-btn:active 
+    border-radius: 40px 
+    background: inherit 
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.3) 
+
+
+.v-btn::before
+    border-radius: 40px 
+    background: inherit 
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.3) 
+
+.v-ripple__container 
+  display: none
+
+
+// card
+.v-card.v-sheet
+  border-radius: 20px 
+  background: inherit 
+  box-shadow:  3px 3px 6px rgba(0, 0, 0, 0.25), -3px -3px 6px rgba(255, 255, 255, 0.3) 
+  margin: 4px 
+  padding: 4px 
+
+// slider
+.v-slider--horizontal .v-slider__track-container 
+  border-radius: 10px 
+  background: inherit 
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.3) 
+  height: 20px 
+
+
+.v-slider--horizontal .v-slider__track-fill.primary
+  border-radius: 10px
+  background: var(--v-accent-lighten4)
+  box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.25), -1px -1px 3px rgba(255, 255, 255, 0.3) 
+  height: 20px 
+
+
+.v-slider--horizontal .v-slider__track-background
+  display: none
+
+.v-slider__thumb
+  display: none
+
+
+// input
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot
+  border-radius: 10px
+  background: inherit
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.3)
+
+// navigation drawer
+.v-navigation-drawer.v-navigation-drawer--fixed.v-navigation-drawer--open
+  background: inherit
+  box-shadow: -3px -3px 12px rgba(0, 0, 0, 0.6)
+
+.v-content__wrap
+  padding-left: 16px
+
+// list
+.v-list-item
+  border-radius: 10px
+  background: inherit
+  margin: 8px
+
+  &.v-list-item--two-line,
+  &.v-list-item--link
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 6px rgba(255, 255, 255, 0.3)
+
+  &:before
+    background: inherit
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 6px rgba(255, 255, 255, 0.3)
+
+  &:active
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.3)
+
+.v-divider
+  border-color: var(--v-primary-base) !important
+
+.v-sheet.v-sheet--tile.v-toolbar.v-app-bar.v-app-bar--fixed
+  background: inherit
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25), -3px -3px 6px rgba(255, 255, 255, 0.3)
